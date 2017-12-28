@@ -1,0 +1,66 @@
+{
+  "groups" : [ {
+    "id" : 14,
+    "projects" : [ {
+      "id" : 17,
+      "name" : "JGA_Slalom_TEsting",
+      "description" : null,
+      "versions" : {
+        "18" : {
+          "id" : 18,
+          "name" : "default",
+          "description" : "Default Version",
+          "jobsTree" : {
+            "id" : 19,
+            "name" : "ROOT",
+            "children" : [ {
+              "id" : 129,
+              "name" : "DEFAULT",
+              "children" : [ ],
+              "jobs" : [ {
+                "id" : 21,
+                "name" : "dim_airport_setup",
+                "description" : null,
+                "type" : "ORCHESTRATION"
+              }, {
+                "id" : 46,
+                "name" : "dim_airports",
+                "description" : null,
+                "type" : "TRANSFORMATION"
+              } ]
+            } ],
+            "jobs" : [ {
+              "id" : 76,
+              "name" : "nfl_play_by_play",
+              "description" : null,
+              "type" : "TRANSFORMATION"
+            }, {
+              "id" : 83,
+              "name" : "nfl_play_by_play_creation",
+              "description" : null,
+              "type" : "ORCHESTRATION"
+            } ]
+          }
+        }
+      },
+      "variables" : { },
+      "environments" : {
+        "20" : {
+          "id" : 20,
+          "name" : "Test",
+          "schema" : "RAW",
+          "url" : "slalom",
+          "database" : "JAMES_TEST_DB"
+        }
+      },
+      "currentEnvironmentID" : 20,
+      "accessControlList" : {
+        "admins" : [ "ec2-user" ],
+        "usersWithAccess" : [ "ec2-user" ],
+        "publicAdmins" : false,
+        "publicUsers" : true
+      }
+    } ],
+    "projectGroup" : "Slalom Testing"
+  } ]
+}
